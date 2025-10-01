@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"gin-todo/utils"
+	"gin-todo/internal/utils"
 	"net/http"
 	"strings"
 

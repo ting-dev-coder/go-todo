@@ -1,0 +1,12 @@
+.idea
+build
+.env
+.env.local
+conf/config.env
+.google.json
+storage
+docs/docs.go
+docs/swagger.*
+.vscode
+local_test
+.claude

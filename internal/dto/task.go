@@ -1,19 +1,18 @@
 package dto
 
-import "gin-todo/model"
+import "gin-todo/internal/model"
 
 type UpdateTaskReq struct {
-	ID          int    `json:"id"`
-	Name        string `json:"name"`
-	Status      string `json:"status"`
-	Description string `json:"description"`
+	Name        string `json:"name" binding:"required"`
+	Status      string `json:"status" binding:"required"`
+	Description string `json:"description" binding:"required"`
 	IsDone      bool   `json:"isDone"`
 }
 
 type AddTaskReq struct {
-	Name        string `json:"name"`
-	Status      string `json:"status"`
-	Description string `json:"description"`
+	Name        string `json:"name" binding:"required"`
+	Status      string `json:"status" binding:"required"`
+	Description string `json:"description" binding:"required"`
 	IsDone      bool   `json:"isDone"`
 }
 
